@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+input {
+    background-color: transparent;
+}
+
+input:focus {
+    outline: none;
+}
+
+nav {
+    padding: 29px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+    z-index: 1;
+}
+
+nav img {
+    height: 35px;
+    max-width: 35px;
+}
+
+
+.searchBar.navLinks.navIcons {
+    color: black;
+}
+
+.navLinks {
+    width: 215px;
+    flex-shrink: 0;
+}
+
+.navLinks img {
+    height: 30px;
+}
+
+.link {
+    padding: 15px;
+}
+
+#logo {
+    padding: 15px;
+}
+
+#logo:hover {
+    background-color: #f8f9fa;
+}
+
+#today:hover {
+    background-color: #f8f9fa;
+}
+
+#dropDown {
+    display: none;
+}
+
+#searchIcon {
+    display: none;
+}
+
+.searchBar {
+    padding: 15px;
+    background-color: #f8f9fa;
+    flex-basis: 850px;
+    flex-shrink: 2;
+}
+
+.searchBar img {
+    height: 15px;
+}
+
+.searchBar:hover {
+    background-color: #efefef;
+}
+
+.navIcons {
+    width: 235px;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.navIcons img {
+    display: inline-flex;
+    height: 25px;
+}
+
+.navIcons a:hover {
+    background-color: #f8f9fa;
+    padding: 15px;
+}
+
+.navIcons a {
+    padding: 15px
+}   
+
+.main {
+    width: 100vw;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    max-height: 1400px;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+@media screen and (max-width: 1170px) {
+    .grid {
+        max-height: 1600px;
+    }
+    
+}
+
+@media screen and (max-width: 970px) {
+    .grid {
+        max-height: 2000px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .grid {
+        max-height: 2800px;
+    }
+    
+    #searchIcon {
+        display: inline-flex
+    }
+    
+    .searchBar {
+        display: none;
+    }
+
+    .navIcons {
+        width: 300px;
+        display: flex;
+        align-items: center;
+    }
+
+    #dropDown {
+        display: inline-flex;
+    }
+
+    #start, #today {
+        display: none;
+    }
+}
+
+.item {
+    overflow: overlay;
+    width: 236px;
+    position: relative;
+}
+
+.item button {
+    display: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+.item:hover button {
+    display: block;
+}
+
+.item img {
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.imgIcons {
+    display: inline-flex;
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    display: none;
+}
+
+.item:hover .imgIcons {
+    display: block;
+}
+
+.imgIcons img {
+    height: 40px;
+    width: auto;
+    margin-right: 15px;
+    background-color: hsla(0, 0%, 94%, .8);
+    padding: 10px;
+}
+
+
+
+
